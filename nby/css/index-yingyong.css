@@ -1,0 +1,315 @@
+/*顶部区域*/
+.top{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.top .top_in{
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    /*background-color: yellow;*/
+}
+.top .top_left{
+    height: 100%;
+    width: 190px;
+    /*background-color: pink;*/
+    float: left;
+}
+.top .top_left>h1{
+    width: 100%;
+    height: 100%;
+}
+.top .top_left>h1>a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/nubia-logo.png");
+}
+.top .top_right{
+    height: 100%;
+    width: 740px;
+    /*background-color: pink;*/
+    float: right;
+}
+.top .top_nav{
+    float: right;
+    width: 550px;
+    height: 100%;
+    /*background-color: skyblue;*/
+}
+.top .top_nav>li{
+    float: left;
+}
+.top .top_nav>li>a{
+    font-size: 16px;
+    font-weight:bold;
+    color: #fff;
+    line-height:60px;
+    margin-left: 40px;
+}
+.top ul>li>a:hover{
+    color: #e82c07;
+}
+/*内容区域*/
+.content{
+    width: 100%;
+    height: 911px;
+    margin-top: 95px;
+    background: white;
+}
+.content .banner{
+    width: 1170px;
+    height: 482px;
+    margin: 0 auto;
+    /*background-color: yellow;*/
+    position: relative;
+    cursor: pointer;
+}
+.content .slides>li>a{
+    display: inline-block;
+    width: 1170px;
+    height: 482px;
+    text-align: center;
+    overflow: hidden;
+}
+.content .slides>li>a>img{
+    height: 100%;
+    margin: 0 -100%;
+}
+.content .flex{
+    width: 140px;
+    height: 140px;
+}
+.content .flex>li{
+    width: 70px;
+    height: 70px;
+}
+.content .flex>li>a{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    text-align: center;
+    line-height: 70px;
+
+}
+.content .flex .flex_prev{
+    background: url("../images/ad_ctr_index.png") no-repeat;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    opacity: 0;
+}
+.content .flex .flex_next{
+    background: url("../images/ad_ctr_index.png") 0px -70px no-repeat;
+    position: absolute;
+    top: 40%;
+    right: 0;
+    opacity: 0;
+
+}
+.content .banner:hover .flex .flex_prev{
+    opacity: 0.8
+}
+.content .banner:hover .flex .flex_next{
+    opacity: 0.8
+}
+.content .banner .flex .flex_prev:hover{
+    opacity: 1;
+}
+.content .banner .flex .flex_next:hover{
+    opacity: 1;
+}
+.content .banner .control{
+    width: 150px;
+    height: 20px;
+    /*background: red;*/
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    bottom: 10px;
+}
+.content .banner .control>li{
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    float: left;
+    margin-left: 15px;
+    border-radius: 50%;
+}
+.content .banner .control>li:hover{
+    background: blue;
+}
+.content .banner_2{
+    width: 1170px;
+    height: 429px;
+    margin: 0 auto;
+    /*background-color: blue;*/
+
+}
+.content .banner_2 .left{
+    width: 910px;
+    height: 429px;
+    /*background-color: pink;*/
+    float: left;
+}
+.content .banner_2 .left>p{
+    color: #4e5158;
+    font-size: 14px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e9e9e9;
+}
+.content .banner_2 .left .left_list>li{
+    float: left;
+    width: 227.5px;
+    height: 82px;
+    padding-top: 12px;
+    margin-bottom: 34px;
+    position: relative;
+
+}
+.content .banner_2 .left .left_list>li>a>span{
+    position: absolute;
+    margin-left: 15px;
+    top: 30px;
+    color: #000000;
+    font-size: 14px;
+}
+.content .banner_2 .right{
+    width: 240px;
+    height: 325px;
+    /*background-color: pink;*/
+    float: right;
+}
+.content .banner_2 .right>p{
+    color: #4e5158;
+    font-size: 14px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e9e9e9;
+}
+.content .banner_2 .right .right_list div{
+    padding: 10px 0;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+}
+.content .banner_2 .right .right_list .first_span{
+    color: #e60012;
+    margin-right: 20px;
+}
+.content .banner_2 .right .right_list img{
+    margin-left: 30px;
+    display: none;
+}
+.content .banner_2 .right .right_list>li:hover img{
+    display: block;
+}
+    /*底部区域*/
+.footer{
+    width: 100%;
+    height: 128px;
+    padding: 30px 0 50px 0;
+    /*background-color: green;*/
+}
+.footer .copyright{
+    width: 1000px;
+    height: 48px;
+    margin: 0 auto;
+    position: relative;
+    /*background-color: skyblue;*/
+}
+.footer .copyright .foot_nav{
+    padding-top: 8px;
+}
+.footer .copyright .foot_nav>a:hover{
+    color: #333;
+}
+.footer .copyright .foot_nav>a{
+    padding: 0 15px;
+    color: #999;
+    -webkit-transition: color .3s ease-in-out;
+    -moz-transition: color .3s ease-in-out;
+    -ms-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+}
+.footer .copyright .footer_nav:first-child{
+    padding-left: 0;
+}
+.footer .copyright .foot_func{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.footer .copyright .foot_func>a{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: 10px;
+    line-height: 1em;
+    position: relative;
+    /*background-color: pink;*/
+    background: url("../images/nubia-syb-all.png");
+}
+.footer .copyright .foot_func>a:nth-child(1){
+    background-position: -246px 0;
+}
+.footer .copyright .foot_func>a:nth-child(2){
+    background-position: -186px 0;
+}
+.footer .copyright .foot_func>a:nth-child(3){
+    background-position: -126px 0;
+}
+.footer .copyright .foot_func>a:nth-child(4){
+    background-position: -156px 0;
+}
+.footer .copyright .foot_func>a:nth-child(5){
+    background-position: -216px 0;
+}
+
+.footer .copyright .foot_func>a:nth-child(1):hover{
+    background-position: -246px -30px;
+}
+.footer .copyright .foot_func>a:nth-child(2):hover{
+    background-position: -186px -30px;
+}
+.footer .copyright .foot_func>a:nth-child(3):hover{
+    background-position: -126px -30px;
+}
+.footer .copyright .foot_func>a:nth-child(4):hover{
+    background-position: -156px -30px;
+}
+.footer .copyright .foot_func>a:nth-child(5):hover{
+    background-position: -216px -30px;
+}
+
+
+
+.footer .copyright .foot_func>strong{
+    width: 220px;
+    height: 30px;
+    display: inline-block;
+    overflow: hidden;
+    background: url("../images/nubia-foot-tel.jpg");
+    margin-left: 10px;
+}
+.footer .copyright .footer_info{
+    padding-top: 10px;
+    -webkit-transform: scale(0.83333333) translateX(-99px);
+    -moz-transform: scale(0.83333333) translateX(-99px);
+    -ms-transform: scale(0.83333333) translateX(-99px);
+    transform: scale(0.83333333) translateX(-99px);
+}
+.footer .copyright .footer_info a{
+    margin-right: 20px;
+}
+.footer .copyright .footer_info a:hover{
+    color: #333;
+}

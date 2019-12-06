@@ -1,0 +1,519 @@
+/*顶部区域*/
+.top{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.top .top_in{
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    /*background-color: yellow;*/
+}
+.top .top_left{
+    height: 100%;
+    width: 190px;
+    /*background-color: pink;*/
+    float: left;
+}
+.top .top_left>h1{
+    width: 100%;
+    height: 100%;
+}
+.top .top_left>h1>a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/nubia-logo.png");
+}
+.top .top_right{
+    height: 100%;
+    width: 740px;
+    /*background-color: pink;*/
+    float: right;
+}
+.top .top_nav{
+    float: left;
+    width: 550px;
+    height: 100%;
+    /*background-color: skyblue;*/
+}
+.top .top_nav>li{
+    float: left;
+}
+.top .top_nav>li>a{
+    font-size: 16px;
+    font-weight:bold;
+    color: #fff;
+    line-height:60px;
+    margin-left: 40px;
+}
+.top ul>li>a:hover{
+    color: #e82c07;
+}
+.top .top_login{
+    float: right;
+    width: 150px;
+    height: 100%;
+    /*background-color: skyblue;*/
+}
+.top .top_login>li{
+    float: right;
+    line-height: 60px;
+    margin-left: 10px;
+}
+.top .top_login>li>a{
+    color: #ccc;
+}
+.top .top_login>li:nth-child(3){
+    width: 30px;
+    height: 30px;
+    background: url("../images/nubia-syb-all.png");
+    margin-top: 15px;
+}
+
+/*广告区域*/
+.banner{
+    width: 100%;
+    height: 860px;
+    /*background-color: green;*/
+}
+.banner .nav_out{
+    width: 100%;
+    height: 121px;
+    background-color: white;
+    z-index: 998;
+    position: absolute;
+    padding-top: 60px;
+}
+.banner .nav{
+    width: 1200px;
+    height: 121px;
+    background-color: white;
+    margin: 0 auto;
+}
+.banner .nav>ul{
+    width: 100%;
+    height: 100%;
+    /*background-color: yellow;*/
+    padding-left: 75px;
+    padding-right: 75px;
+    box-sizing: border-box;
+}
+.banner .nav>ul>li{
+    width: 150px;
+    height: 100%;
+    float: left;
+    /*background-color: blue;*/
+    text-align: center;
+
+}
+.banner .nav>ul>li>a{
+    color: #ccc;
+}
+.banner .nav>ul>li>a>img{
+    margin-top: 15px;
+}
+.banner .nav>ul>li:hover{
+    border-bottom:2px solid red;
+    box-sizing: border-box;
+}
+.banner .figure{
+    width: 100%;
+    height: 600px;
+    /*background-color: red;*/
+    overflow: hidden;
+    /*奇淫技巧*/
+    text-align: center;
+    position: relative;
+}
+.banner .figure>img{
+    height: 100%;
+    /*奇淫技巧*/
+    margin: 0 -100%;
+}
+.banner .figure>ol{
+    width: 150px;
+    height: 20px;
+    /*background: red;*/
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    bottom: 10px;
+}
+.banner .figure>ol>li{
+    width: 8px;
+    height: 8px;
+    background: #ccc;
+    float: left;
+    margin-left: 15px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    /*box-sizing: border-box;*/
+    transition: all 1s;
+}
+.banner .figure>ol>li:hover{
+    border: 2px solid black;
+    background: transparent;
+    transform: scale(1.2,1.2);
+    /*box-sizing: border-box;*/
+}
+.banner .video{
+    width: 1200px;
+    height: 250px;
+    margin: 10px auto;
+    /*background: black;*/
+}
+.banner .video>ul{
+    width: 100%;
+    height: 100%;
+    /*background-color: yellow;*/
+    display: flex;
+    justify-content: space-between;
+}
+.banner .video>ul>li{
+    width: 396px;
+    height: 250px;
+    background: black;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.banner .video>ul>li>img{
+    height: 100%;
+    margin: 0 -100%;
+}
+.banner .video .video_info{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+
+}
+.banner .video .video_info>h3{
+    font-size: 16px;
+    color: white;
+    line-height: 40px;
+}
+.banner .video .video_info>p{
+    color: white;
+}
+.banner .video>ul>li:hover .video_info{
+    opacity: 1;
+}
+.banner .video>ul>li:hover>img{
+    opacity: 0.5;
+}
+.banner .video>ul>li:hover .video_info>img{
+    animation: sport 2s 0.5s ease-in-out infinite;
+}
+@keyframes sport {
+    20%{
+        -webkit-transform: scale(.8);
+        transform: scale(.8);
+    }
+    40%{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    60%{
+        -webkit-transform: scale(.9);
+        transform: scale(.9);
+    }
+    80%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+}
+/*内容区域*/
+.content{
+    width: 100%;
+    height: 1883px;
+    /*background-color: blue;*/
+}
+.content>dl{
+    width: 1200px;
+    height: 100%;
+    /*background-color: green;*/
+    margin: 0 auto;
+    overflow: hidden;
+}
+.content>dl>dt{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.content>dl>dt>h3{
+    font-size: 35px;
+    color: #333;
+}
+.content>dl>dt>p{
+    color: #e8340e;
+    margin-top: 20px;
+}
+.content .content_phone{
+    width: 1200px;
+    height: 1200px;
+    /*background-color: yellow;*/
+}
+.content .content_phone>li{
+    float: left;
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+.content .content_phone>li:nth-child(1){
+    width: 1200px;
+    height: 395px;
+    /*background-color: pink;*/
+    margin-bottom: 10px;
+}
+.content .content_phone>li:nth-child(2){
+    width: 395px;
+    height: 795px;
+    /*background-color: purple;*/
+    margin-right: 10px;
+
+}
+.content .content_phone>li:nth-child(3){
+    width: 795px;
+    height: 390px;
+    /*background-color: palegreen;*/
+    margin-bottom: 10px;
+
+}
+.content .content_phone>li:nth-child(4){
+    width: 390px;
+    height: 395px;
+    /*background-color: gold;*/
+    margin-right: 10px;
+}
+.content .content_phone>li:nth-child(5){
+    width: 395px;
+    height: 395px;
+    /*background-color: tomato;*/
+}
+.content .content_phone>li:nth-child(1)>img{
+    margin-top: 60px;
+}
+.content .content_phone .phone_des{
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 10px;
+    text-align: center;
+}
+.content .content_phone .phone_des>h4{
+    font-size: 20px;
+    color: #000;
+}
+.content .content_phone .phone_des>p{
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #999;
+}
+.content .content_phone .phone_des>span{
+    display: inline-block;
+    width: 108px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: #000;
+}
+.content .content_phone>li:nth-child(1) .phone_des{
+    left: 0;
+    margin-left: 800px;
+    bottom: 180px;
+}
+.content .content_phone>li>img{
+    transition: all 1s;
+}
+.content .content_phone>li:nth-child(1) img{
+    margin-left: -80px;
+}
+.content .content_phone>li:nth-child(1):hover img{
+    margin-left: 0;
+}
+.content .content_phone>li:nth-child(3) img{
+    margin-left: 80px;
+}
+.content .content_phone>li:nth-child(3):hover img{
+    margin-left: 0;
+}
+.content .content_phone>li:hover .img_scale{
+    transform: scale(1.2,1.2);
+}
+/*第二个ul开始*/
+
+.content .content_accessories{
+    width: 1200px;
+    height: 300px;
+    /*background-color: #ccc;*/
+    display: flex;
+    justify-content: space-between;
+
+}
+.content .content_accessories>li{
+    float: left;
+    width: 295px;
+    height: 300px;
+    background-color: white;
+    overflow: hidden;
+}
+.content .content_accessories>li>img{
+    width: 100%;
+    transition: all 1s;
+}
+.content .content_accessories>li>p{
+    text-align: center;
+    margin-top: 25px;
+}
+.content .content_accessories>li:hover img{
+    transform: scale(1.2,1.2);
+}
+
+
+
+
+
+/*底部区域*/
+.footer{
+    width: 100%;
+    height: 396px;
+    background-color: white;
+    font-size: 12px;
+    padding-top: 40px;
+}
+.footer .crumbs{
+    width: 1200px;
+    height: 223px;
+    margin: 0 auto;
+    border-top:#f1f1f1 1px solid;
+    /*background-color: red;*/
+}
+.footer .crumbs .top_ff{
+    width: 1000px;
+    height: 17px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+.footer .crumbs .all{
+    width: 1000px;
+    height: 185px;
+    /*background-color: green;*/
+    margin: 0 auto;
+
+}
+.footer .crumbs .all>dl{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    float: left;
+}
+.footer .crumbs .all>dl dt{
+    width: 200px;
+    line-height: 21px;
+    color: #333;
+}
+.footer .crumbs .all>dl dd{
+    width: 200px;
+    line-height: 24px;
+}
+.footer .footer-nav{
+    width: 1200px;
+    height: 133px;
+    margin: 0 auto;
+    padding: 30px 0 50px 0;
+    box-sizing: border-box;
+    /*background-color: skyblue;*/
+}
+.footer .footer-nav .copyright{
+    width: 1000px;
+    height: 53px;
+    margin: 0 auto;
+    /*background-color: pink;*/
+    position: relative;
+}
+.footer .footer-nav .copyright .foot-nav {
+    width: 1000px;
+    padding-top: 15px;
+
+}
+.footer .footer-nav .copyright .foot-nav>a{
+    padding: 0px 6px;
+}
+.footer .footer-nav .copyright .foot-nav>span{
+    display: inline-block;
+    width: 370px;
+    height: 30px;
+    text-align: center;
+    /*background-color: gold;*/
+    position: absolute;
+    left: 630px;
+    top: 8px;
+
+}
+.footer .footer-nav .copyright .foot-nav>span>a{
+    display: inline-block;
+    /*padding-top: 8px;*/
+    float: left;
+    width: 30px;
+    height: 30px;
+    line-height: 1;
+    margin-left: 10px;
+    /*background-color: plum;*/
+    overflow: hidden;
+}
+.footer .footer-nav .copyright .foot-nav>span>strong{
+    display: inline-block;
+    margin-left: 20px;
+    width: 189px;
+    float: left;
+    /*background-color: red;*/
+    margin-top: 5px;
+    font-size: 16px;
+}
+.footer .footer-nav .copyright .foot-nav>span>a:nth-child(1){
+    background: url("../images/nubia-syb-all.png") -246px 0px no-repeat;
+}
+.footer .footer-nav .copyright .foot-nav>span>a:nth-child(1){
+    background: url("../images/nubia-syb-all.png") -246px 0px no-repeat;
+}
+.footer .footer-nav .copyright .foot-nav>span>a:nth-child(2){
+    background: url("../images/nubia-syb-all.png") -186px 0px no-repeat;
+}
+.footer .footer-nav .copyright .foot-nav>span>a:nth-child(3){
+    background: url("../images/nubia-syb-all.png") -126px 0px no-repeat;
+}
+.footer .footer-nav .copyright .foot-nav>span>a:nth-child(4){
+    background: url("../images/nubia-syb-all.png") -156px 0px no-repeat;
+}
+.footer .footer-nav .copyright .foot-nav .footer_info{
+    padding-top: 10px;
+    width: 1000px;
+    height: 33px;
+    margin-left: 5px;
+    /*-webkit-margin-before: 1em;*/
+    /*-webkit-margin-after: 1em;*/
+    /*-webkit-margin-start: 0px;*/
+    /*-webkit-margin-end: 0px;*/
+}
+.footer .footer-nav .copyright .foot-nav .footer_info .img1{
+    width: 11px;
+    top: 3px;
+}
+
+

@@ -1,0 +1,565 @@
+/*右边固定栏*/
+.tool{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.tool ul{
+    width: 50px;
+    position: absolute;
+    right: 20px;
+}
+.tool ul li{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    margin-top: 10px;
+}
+.tool ul li a{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    display: block;
+    background-image: url(../images/nb-extra-tool-ico.png);
+    background-repeat: no-repeat;
+    background-size: 250px 50px;
+}
+.tool ul li:nth-child(1) a{
+    background-position: -50px 0;
+}
+.tool ul li:nth-child(2) a{
+    background-position: -100px 0;
+}
+.tool ul li:nth-child(3) a{
+    background-position: -200px 0;
+}
+.tool ul li:nth-child(4) a{
+    background-position: -150px 0;
+}
+/*顶部区域*/
+.top{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.top .top_in{
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    /*background-color: yellow;*/
+}
+.top .top_left{
+    height: 100%;
+    width: 190px;
+    /*background-color: pink;*/
+    float: left;
+}
+.top .top_left>h1{
+    width: 100%;
+    height: 100%;
+}
+.top .top_left>h1>a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/nubia-logo.png");
+}
+.top .top_right{
+    height: 100%;
+    width: 740px;
+    /*background-color: pink;*/
+    float: right;
+}
+.top .top_nav{
+    float: left;
+    width: 550px;
+    height: 100%;
+    /*background-color: skyblue;*/
+}
+.top .top_nav>li{
+    float: left;
+}
+.top .top_nav>li>a{
+    font-size: 16px;
+    font-weight:bold;
+    color: #fff;
+    line-height:60px;
+    margin-left: 40px;
+}
+.top ul>li>a:hover{
+    color: #e82c07;
+}
+.top .top_login{
+    float: right;
+    width: 150px;
+    height: 100%;
+    /*background-color: skyblue;*/
+}
+.top .top_login>li{
+    float: right;
+    line-height: 60px;
+    margin-left: 10px;
+}
+.top .top_login>li>a{
+    color: #ccc;
+}
+.top .top_login>li:nth-child(3){
+    width: 30px;
+    height: 30px;
+    background: url("../images/nubia-syb-all.png");
+    margin-top: 15px;
+}
+/*内容区域*/
+.content{
+    width: 100%;
+    height: 1336px;
+    /*background-color: red;*/
+    padding-top: 60px;
+}
+.content .service{
+    width: 100%;
+    height: 334px;
+    overflow: hidden;
+    position: relative;
+    background: url(../images/nb-ser-high.jpg)no-repeat center;
+    background-size: cover;
+}
+.content .ser-content{
+    width: 1200px;
+    height: 1002px;
+    margin: 0 auto;
+    padding: 20px 0 40px;
+    /*background-color: skyblue;*/
+}
+.content .ser-content .policy{
+    width: 1200px;
+    height: 316px;
+    margin: 0 auto;
+    /*background-color: yellow;*/
+}
+.content .ser-content .s-title{
+    width: 1200px;
+    height: 60px;
+    color: #333;
+    margin: 0 auto;
+}
+.content .ser-content .s-title>h2{
+    font-size: 20px;
+    line-height: 1.2em;
+    display: inline-block;
+}
+.content .ser-content .s-title>h3{
+    font-size: 16px;
+    line-height: 1.4em;
+    display: inline-block;
+}
+.content .ser-content .s-box{
+    width: 1200px;
+    height: 256px;
+    margin: 0 auto;
+}
+.content .ser-content .s-box ul li{
+    width: 595px;
+    height: 256px;
+    float: left;
+    background-color: white;
+    position: relative;
+}
+.content .ser-content .s-box ul li:nth-child(2){
+    float: right;
+}
+.content .ser-content .s-box .figure{
+    width: 200px;
+    height: 256px;
+    overflow: hidden;
+    float: left;
+}
+.content .ser-content .s-box .figure .cont{
+    width: 285px;
+    height: 123px;
+    padding: 90px 60px 0 250px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.content .ser-content .s-box .figure .cont h2{
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+.content .ser-content .s-box .figure .cont p{
+    width: 285px;
+    height: 80px;
+    min-height: 80px;
+    font-size: 15.4px;
+}
+.content .ser-content .s-box .figure .cont:hover{
+    color: #000;
+}
+.content .ser-content .self{
+    width: 1200px;
+    height: 490px;
+}
+.content .ser-content .self .self-title{
+    width: 1200px;
+    height: 45px;
+    padding: 10px 0 25px 0;
+    /*background-color: salmon;*/
+    color: #333;
+}
+.content .ser-content .self .self-title h2{
+    font-size: 20px;
+    line-height: 1.2em;
+    display: inline-block;
+}
+.content .ser-content .self .self-title h3{
+    font-size: 16px;
+    line-height: 1.4em;
+    display: inline-block;
+}
+.content .ser-content .self .self-box{
+    width: 1200px;
+    height: 410px;
+    /*background-color: green;*/
+}
+.content .ser-content .self .self-box ul li{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    /*background-color: sandybrown;*/
+    display: flex;
+    justify-content: space-between;
+}
+.content .ser-content .self .self-box .c1{
+    width:295px;
+    height: 200px;
+    overflow: hidden;
+    background-color: white;
+    float: left;
+}
+.content .ser-content .self .self-box .c1 a{
+    display: block;
+    width: 290px;
+    height: 200px;
+    margin: 0 5px;
+    /*background-color: #fff;*/
+    text-align: center;
+    /*position: relative;*/
+    overflow: hidden;
+}
+.content .ser-content .self .self-box .c1 a b{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/nb-sc-self-ico1.jpg);
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    margin-top: 40px;
+    overflow: hidden;
+}
+.content .ser-content .self .self-box .c1:nth-child(2) a b{
+    background-image: url(../images/nb-sc-self-ico2.jpg);
+    background-repeat: no-repeat;
+}
+.content .ser-content .self .self-box .c1:nth-child(3) a b{
+    background-image: url(../images/nb-sc-self-ico3.jpg);
+    background-repeat: no-repeat;
+}
+.content .ser-content .self .self-box .c1:nth-child(4) a b{
+    background-image: url(../images/nb-sc-self-ico4.jpg);
+    background-repeat: no-repeat;
+}
+.content .ser-content .self .self-box .c1:nth-child(1):hover a b{
+    background-image: url(../images/nb-sc-self-ico1-hov.jpg);
+    background-repeat: no-repeat;
+}
+.content .ser-content .self .self-box .c1:nth-child(2):hover a b{
+    background-image: url(../images/nb-sc-self-ico2-hov.jpg);
+    background-repeat: no-repeat;
+}
+.content .ser-content .self .self-box .c1:nth-child(3):hover a b{
+    background-image: url(../images/nb-sc-self-ico3-hov.jpg);
+    background-repeat: no-repeat;
+}
+.content .ser-content .self .self-box .c1:nth-child(4):hover a b{
+    background-image: url(../images/nb-sc-self-ico4-hov.jpg);
+    background-repeat: no-repeat;
+}
+.content .ser-content .self .self-box ul li:nth-child(2) .c1:nth-child(1) a b{
+    background-image: url(../images/nb-sc-self-ico5.jpg);
+    background-repeat: no-repeat;
+}
+.content .ser-content .self .self-box ul li:nth-child(2) .c1:nth-child(2) a b{
+    background-image: url(../images/nb-sc-self-ico6.jpg);
+    background-repeat: no-repeat;
+}
+.content .ser-content .self .self-box ul li:nth-child(2) .c1:nth-child(3) a b{
+    background-image: url(../images/nb-sc-self-ico7.jpg);
+    background-repeat: no-repeat;
+}
+.content .ser-content .self .self-box ul li:nth-child(2) .c1:nth-child(4) a b{
+    background-image: url(../images/nb-sc-self-ico8.jpg);
+    background-repeat: no-repeat;
+}
+.content .ser-content .self .self-box ul li:nth-child(2) .c1:nth-child(1):hover a b{
+    background-image: url(../images/nb-sc-self-ico5-hov.jpg);
+    background-repeat: no-repeat;
+}
+.content .ser-content .self .self-box ul li:nth-child(2) .c1:nth-child(1):hover a b{
+    background-image: url(../images/nb-sc-self-ico5-hov.jpg);
+    background-repeat: no-repeat;
+}.content .ser-content .self .self-box ul li:nth-child(2) .c1:nth-child(2):hover a b{
+     background-image: url(../images/nb-sc-self-ico6-hov.jpg);
+     background-repeat: no-repeat;
+ }
+.content .ser-content .self .self-box ul li:nth-child(2) .c1:nth-child(3):hover a b{
+    background-image: url(../images/nb-sc-self-ico7-hov.jpg);
+    background-repeat: no-repeat;
+}
+.content .ser-content .self .self-box ul li:nth-child(2) .c1:nth-child(4):hover a b{
+    background-image: url(../images/nb-sc-self-ico8-hov.jpg);
+    background-repeat: no-repeat;
+}
+
+.content .ser-content .self .self-box .c1 a p{
+    display: block;
+    padding-top: 18px;
+    font-size: 18px;
+    color: #333;
+}
+.content .ser-content .other{
+    width: 1200px;
+    height: 136px;
+    /*background-color: gold;*/
+    padding-top: 40px;
+}
+.content .ser-content .other .other-box{
+    width: 1200px;
+    height: 96px;
+    /*background-color: pink;*/
+}
+.content .ser-content .other .other-box ul{
+    width: 1000px;
+    height: 96px;
+    margin: 0 auto;
+}
+.content .ser-content .other .other-box ul li{
+    width: 250px;
+    height: 96px;
+    /*background-color: white;*/
+    text-align: center;
+    float: left;
+    position: relative;
+}
+.content .ser-content .other .other-box ul li:before{
+    width: 1px;
+    height: 80%;
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: 0;
+    background-color: #dcdcdc;
+    overflow: hidden;
+}
+.content .ser-content .other .other-box ul li:last-child:before{
+    display: none;
+}
+.content .ser-content .other .other-box ul li a{
+    display: inline-block;
+    color: #999999;
+}
+.content .ser-content .other .other-box ul li a b{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: inline-block;
+    background-size: 240px 120px;
+    background-image: url(../images/nb-sc-other-ico.png);
+    background-repeat: no-repeat;
+}
+.content .ser-content .other .other-box ul li:nth-child(2) a b{
+    background-position: -60px 0;
+}
+.content .ser-content .other .other-box ul li:nth-child(3) a b{
+    background-position: -120px 0;
+}
+.content .ser-content .other .other-box ul li:nth-child(4) a b{
+    background-position: -180px 0;
+}
+.content .ser-content .other .other-box ul li:nth-child(1):hover a b{
+     background-position: 0 -60px;
+ }
+.content .ser-content .other .other-box ul li:nth-child(2):hover a b{
+    background-position: -60px -60px;
+}
+.content .ser-content .other .other-box ul li:nth-child(3):hover a b{
+    background-position: -120px -60px;
+}
+.content .ser-content .other .other-box ul li:nth-child(4):hover a b{
+    background-position: -180px -60px;
+}
+    /*其他区域*/
+.dirk{
+    width: 100%;
+    height: 362px;
+    /*background-color: yellow;*/
+    background-color: #efeeeb;
+}
+.dirk .container{
+    width: 1140px;
+    height: 362px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    /*background-color: #cccccc;*/
+}
+.dirk .container .large{
+    width: 1140px;
+    height: 222px;
+    padding-bottom: 80px;
+    padding-top: 60px;
+    /*background-color: red;*/
+}
+.dirk .container .large .row{
+    width: 1170px;
+    height: 222px;
+    margin-right: -15px;
+    margin-left: -15px;
+    /*background-color: sandybrown;*/
+}
+.dirk .container .large .row li a{
+    color: #606463;
+}
+.dirk .container .large .row li:hover a{
+    color: #e95f46;
+}
+.dirk .container .large .row div{
+    padding: 0 15px;
+    float: left;
+}
+.dirk .container .large .row h5{
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #000;
+
+}
+.dirk .container .large .row ul li{
+    font-size: 12px;
+    line-height: 22px;
+}
+.dirk .container .large .row .sm1{
+    width: 165px;
+    height: 200px;
+}
+.dirk .container .large .row .sm2{
+    width: 165px;
+    height: 222px;
+}
+.dirk .container .large .row .sm3{
+    width: 165px;
+    height: 178px;
+}
+.dirk .container .large .row .sm4{
+    width: 165px;
+    height: 156px;
+
+}
+.dirk .container .large .row .sm5{
+    width: 165px;
+    height: 156px;
+}
+.dirk .container .large .row .sm6{
+    width: 165px;
+    height: 112px;
+}
+/*底部区域*/
+.footer{
+    width: 100%;
+    height: 208px;
+    /*background-color: blue;*/
+    background-color: #fff;
+    text-align: center;
+    color: #555;
+    font-size: 11px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.footer .container{
+    width: 1140px;
+    height: 208px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /*background-color: blue;*/
+}
+.footer .container>a>img{
+    width: 105px;
+}
+.footer .container .img-box{
+    width: 1140px;
+    height: 48px;
+}
+.footer .container .img-box a{
+    display: inline-block;
+    width: 32px;
+    height: 30px;
+    background-image: url(../images/nubia-syb-all.png);
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+.footer .container .img-box a:nth-child(1){
+    background-position: -125px -0px;
+}
+.footer .container .img-box a:nth-child(2){
+    background-position: -155px -0px;
+}
+.footer .container .img-box a:nth-child(3){
+    background-position: -215px -0px;
+}
+.footer .container .img-box a:nth-child(1):hover{
+    background-position: -125px -30px;
+}
+.footer .container .img-box a:nth-child(2):hover{
+    background-position: -155px -30px;
+}
+.footer .container .img-box a:nth-child(3):hover{
+    background-position: -215px -30px;
+}
+.footer .container .footer-nav{
+    width: 1140px;
+    height: 90px;
+    padding-top: 10px;
+    line-height: 30px;
+}
+.footer .container .footer-nav>small{
+    padding: 0 5px;
+    font-size: 88%;
+}
+.footer .container .footer-nav>small>a{
+    display: inline-block;
+    padding: 0 10px;
+    color: #e95f46;
+}
+.footer .container .footer-nav>small .change{
+    height: 30px;
+    position: relative;
+}
+.footer .container .footer-nav>small .change>img{
+    border: 0;
+    height: 18px;
+    position: absolute;
+    top: 18px;
+    left: 0;
+}
+.footer .container .footer-nav .link>a{
+    color: #e95f46;
+    margin-right: 5px;
+    padding: 0 5px;
+}
+.footer .container .footer-nav a:hover{
+    color: #951b1b;
+}
